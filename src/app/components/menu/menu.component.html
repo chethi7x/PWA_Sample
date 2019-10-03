@@ -1,0 +1,18 @@
+<nav class="ui fixed inverted menu app-shell-menu">
+    <a class="header item" routerLink="/">
+      <h1>Dash 1.0</h1>
+    </a>
+  
+    <a class="header item" routerLink="/app1">
+      Shipping
+    </a>
+    <div class="right menu">
+        <div class="ui circular labels item">
+  
+            <ng-container *ngFor="let language of languageList">
+                <a class="label app-label" href="/angular_sample/{{language.code}}/">{{language.label}}</a>
+              </ng-container>
+          </div>
+      </div>
+  </nav>
+  

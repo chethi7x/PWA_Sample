@@ -7,7 +7,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-locale:en": "ng build --prod --i18n-locale en --i18n-format xlf --i18n-file src/app/translate/translate.en.xlf --output-path=dist/en --baseHref /angular_sample/en/",
+    "build-locale:id": "ng build --prod --i18n-locale id --i18n-format xlf --i18n-file src/app/translate/translate.id.xlf --output-path=dist/id --baseHref /angular_sample/id/",
+    "build-locale:th": "ng build --prod --i18n-locale th --i18n-format xlf --i18n-file src/app/translate/translate.th.xlf --output-path=dist/th --baseHref /angular_sample/th/",
+    "build-locale": "npm run build-locale:id && npm run build-locale:en && npm run build-locale:th"
   },
   "private": true,
   "dependencies": {
@@ -18,8 +22,13 @@
     "@angular/forms": "~8.0.3",
     "@angular/platform-browser": "~8.0.3",
     "@angular/platform-browser-dynamic": "~8.0.3",
+    "@angular/pwa": "^0.803.6",
     "@angular/router": "~8.0.3",
+    "@angular/service-worker": "~8.0.3",
+    "ng-http-loader": "^6.0.1",
+    "ng2-semantic-ui": "^0.9.7",
     "rxjs": "~6.4.0",
+    "rxjs-compat": "^6.5.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
   },

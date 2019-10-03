@@ -1,0 +1,13 @@
+.app-shell-menu {
+    background-color: rgb(16,108,200) !important;
+    height: 56px;
+    width: 100%;
+  }
+  
+  .app-label {
+    color: #000;
+    margin-left: 0em !important;
+    margin:0 0 0 0 !important;
+    cursor: pointer;
+  }
+  

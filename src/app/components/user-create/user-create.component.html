@@ -1,0 +1,60 @@
+<div class="ui card main-form">
+    <div class="content">
+      <div i18n="@@header" class="header">Register New User</div>
+    </div>
+    <div class="content">
+      <div class="ui large form equal width stackable grid">
+        <div class="three column row">
+          <div class="column field">
+            <label i18n="@@firstName" for="firstName">First Name</label>
+            <input type="text"
+                   id="firstName"
+                   name="firstName"
+                   placeholder="Your first name"
+            />
+          </div>
+  
+          <div class="column field">
+            <label i18n="@@lastName" for="lastName">Last Name</label>
+            <input type="text"
+                   id="lastName"
+                   name="lastName"
+                   placeholder="Your last name"
+            />
+          </div>
+  
+          <div class="column field">
+            <label i18n="@@birthdate" for="birthdate">Birthday</label>
+            <input type="date"
+                   id="birthdate"
+                   name="birthdate"
+                   placeholder="Your birthdate"
+            />
+          </div>
+        </div>
+  
+        <div class="ui divider"></div>
+        <div class="one column row">
+                <div class="field column field">
+                  <label i18n="@@description">Description</label>
+                  <textarea rows="2"></textarea>
+                </div>
+            </div>
+
+        <div class="one column row">
+                <div class="column field">
+                  <label i18n="@@upload">Upload Your Photo</label>
+                  <label i18n="@@imageSelect" for="files" class="ui left floated button"><i class="upload icon"></i>Select Image</label>
+                  <input id="files" style="visibility:hidden;" type="file">
+                </div>
+              </div>
+      </div>
+    </div>
+
+    <div class="extra content">
+      <div class="row">
+        <button i18n="@@save" class="ui positive right floated button">Save</button>
+      </div>
+    </div>
+  </div>
+  
